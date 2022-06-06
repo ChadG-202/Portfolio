@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chad Garratt</title>
+    <link rel="shortcut icon" href="images/dots.png"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo" id="name">Chad Garratt</a>
+            <nav>
+                <div class="phone"  id="myNav">
+                    <label for="check" id="menu">
+                        <input type="checkbox" id="check"/> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <a href="index.php" class="logo" id="pname">Chad Garratt</a>
+                    <ul id="menuLink">
+                        <li><a class="hover-underline-animation" onclick="closeNav()" href="#myskills">My skills</a></li>
+                        <li><a class="hover-underline-animation" onclick="closeNav()" href="#mywork">My work</a></li>
+                        <li><a class="hover-underline-animation" onclick="closeNav()" href="#hireme">Hire me</a></li>
+                    </ul>
+                </div>
+                <div class="computer">
+                    <ul>
+                        <li><a class="hover-underline-animation" href="#myskills">My skills</a></li>
+                        <li><a class="hover-underline-animation" href="#mywork">My work</a></li>
+                        <li><a class="hover-underline-animation" href="#hireme">Hire me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="home">
+        <div class="hero">
+            <svg class="circle2" height="230" width="200">
+                <circle class="ball-anim" cx="120" cy="80" r="80" fill="#5690605b" />
+                <circle class="ball-anim" cx="140" cy="170" r="60" fill="#195070ad" />
+            </svg> 
+            <div class="content">
+                <h1 class="stagger1">Skillfully Crafted Code To Be</h1>
+                <h1 class="stagger1" id="split">Proud Of</h1>
+                <div class="meet stagger1">
+                    <span>👇</span>
+                    <p>Meet Chad Garratt</p>
+                </div>
+                <div class="readCV stagger1">
+                    <a href="doc/CV.pdf" id="cv">Flick Through</a>
+                </div>
+                <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
+                    <g id="scroll" transform="translate(-253 -787)">
+                    <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#000" stroke-width="4">
+                        <rect width="40" height="77" rx="20" stroke="none"/>
+                        <rect x="2" y="2" width="36" height="73" rx="18" fill="none"/>
+                    </g>
+                    <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)" fill="#000"/>
+                    </g>
+                </svg>
+            </div>
+            <div id="arrow-wrapper">
+                <img src="images/cv.png" alt="arrow">
+                <h4>My CV</h4>
+            </div>
+            <svg class="poly" viewBox="0 0 147 147">
+                <polygon class="line-anim" points="20,30  150,30  130,45  0,45" fill="#569060"/>
+                <polygon class="line-anim" points="-40,55  70,55  50,70  -60,70" fill="#5690605b"/>
+                <polygon class="line-anim" points="80,55  205,55  185,70  60,70" fill="#195070"/>
+                <polygon class="line-anim" points="-15,80  95,80  75,95  -35,95" fill="#195070"/>
+                <polygon class="line-anim" points="105,80  170,80  150,95 85,95" fill="#569060"/>
+                <polygon class="line-anim" points="40,105  115,105  95,120 20,120" fill="#195070ad"/>
+            </svg>
+            <div class="flex-center">
+                <ul>
+                    <li><a href="https://github.com/ChadG-202"><i class="fa fa-github fa-4x icon-3d  media-anim"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100007105995409"><i class="fa fa-facebook fa-4x icon-3d  media-anim"></i></a></li>
+                    <li><a href="mailto:chadgarratt4@gmail.com"><i class="fa fa-google fa-4x icon-3d  media-anim"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/chadgarratt"><i class="fa fa-linkedin fa-4x icon-3d  media-anim"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="intro" id="myskills">
+            <div class="portrait-img">
+                <img src="images/cg.jpg" alt="Chad Garratt">
+            </div>
+            <div class="intro-background"></div>
+            <div class="card transition1" id="intro1">
+                <div class="card-body">
+                    <div class="front">
+                        <img src="images/ai.png" alt="AI Icon">
+                        <h1>AI Developer</h1>
+                    </div>
+                    <div class="back">
+                        <img src="images/python.png" alt="AI Icon">
+                        <h1>Python Programmer</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card transition1" id="intro2">
+                <div class="card-body">
+                    <div class="front">
+                        <img src="images/java.png" alt="AI Icon">
+                        <h1>Java Programmer</h1>
+                    </div>
+                    <div class="back">
+                        <img src="images/c-sharp.png" alt="AI Icon">
+                        <h1>C# Programmer</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card transition1" id="intro3">
+                <div class="card-body">
+                    <div class="front">
+                        <img src="images/cloud-database.png" alt="AI Icon">
+                        <h1>Database Designer</h1>
+                    </div>
+                    <div class="back">
+                        <img src="images/front-end.png" alt="AI Icon">
+                        <h1>UX UI Designer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio"  id="mywork">
+            <div class="project transition2" id="p1">
+                <div class="text">
+                    <h1>Path Finding Alogirhtms</h1>
+                    <p>This is an interactive pygame environment where the Dijkstra's, A* and Best-First Search path-finding algorithms can be compared to determine how efficiently they solve mazes.</p>
+                    <ul>
+                        <li><button id="look1">Take a Look</button></li>
+                        <li><a href="https://github.com/ChadG-202/Pathfinding" target="_blank" class="go">Have a Go</a></li>
+                    </ul>
+                </div>
+                <div class="video-window" id="vw1">
+                    <div class="video-wrapper">
+                        <svg id="x1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+                        <video controls src="video/pathfinding.mp4"></video>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="images/maze.png" alt="Path Finding">
+                </div>
+            </div>
+            <div class="project transition3" id="p2">
+                <div class="text">
+                    <h1>Emotion Classification (CNN)</h1>
+                    <p>A comparison of deep learning architectures CNN, MLP and RNN to determine the best model for classifying negative, positive and neutral emotion in both image and audio data.</p>
+                    <ul>
+                        <li><button id="look2">Take a Look</button></li>
+                        <li><a href="https://github.com/ChadG-202/Happy-Sad-Emotion-Classification-Through-Machine-Learning" target="_blank" class="go">Have a Go</a></li>
+                    </ul>
+                </div>
+                <div class="video-window" id="vw2">
+                    <div class="video-wrapper">
+                        <svg id="x2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+                        <video controls src="video/emotion_classification.mp4"></video>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="images/AIEmotion.png" alt="Catshop">
+                </div>
+            </div>
+            <div class="project transition4" id="p3">
+                <div class="text">
+                    <h1>Student Marketplace</h1>
+                    <p>This is a front and back-end marketplace designed for students to securely purchase and sell second-hand products using encrypted data. </p>
+                    <ul>
+                        <li><button id="look3">Take a Look</button></li>
+                        <li><a href="https://cg731.brighton.domains/BrightonMarket/index.php" target="_blank" class="go">Have a Go</a></li>
+                    </ul>
+                </div>
+                <div class="video-window" id="vw3">
+                    <div class="video-wrapper">
+                        <svg id="x3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+                        <video controls src="video/brighton_marketplace.mp4"></video>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="images/marketplace.png" alt="Marketplace">
+                </div>
+            </div>
+            <div class="more-wrapper transition4">
+                <a href="https://github.com/ChadG-202" target="_blank">View More</a>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="skills-wrapper">
+                <svg class="circle3" height="300" width="200">
+                    <circle class="skill-an" cx="150" cy="250" r="30" fill="#195070ad" />
+                    <circle class="skill-an" cx="90" cy="150" r="80" fill="#5690605b" />
+                    <circle class="skill-an" cx="140" cy="60" r="60" fill="#195070ad" />
+                </svg>
+                <div class="skill-text">
+                    <h1>Education</h1>
+                    <div class="skill-list">
+                        <div class="text">
+                            <h4><span>1st</span> Degree in Computer Science with Artificial Intelligence</h4>
+                            <h4><span>3</span> A-Levels in Computer Science, Electronics & Physics</h4>
+                            <h4><span>11</span> GCSE's C-A Including Maths & English</h4>
+                        </div>
+                        <img src="images/education.png" alt="Education">
+                    </div>
+                </div>
+                <svg class="circle4" height="300" width="200">
+                    <circle cx="90" cy="200" r="70" fill="#195070ad" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="hire" id="hireme">
+            <div class="hireBody">
+                <div class="form-wrapper">
+                    <div class="heading">
+                        <h1>Dive Into Work With Me</h1>
+                        <h4><span>Questions?</span> Get in contact!</h4>
+                    </div>
+                    <form autocomplete="off" action="index.php" method="post">
+                        <input type="text" autocomplete="off" placeholder="Full Name" maxlength="50" pattern="[a-zA-Z]+ [a-zA-Z]+$" 
+                        title="Must have [Forename Surname]" required name="fullName">
+                        <input type="email" autocomplete="off" placeholder="E-mail" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                        title="Must fit format [characters@characters.domain]" required name="email">
+                        <textarea autocomplete="off" placeholder="Your Message" maxlength="500" required name="question"></textarea>
+                        <input class="form-an" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="top">
+                    <div class="sec" id="s1">
+                        <h1>Contact Me</h1>
+                        <div class="flex-center">
+                            <ul>
+                                <li><a href="https://github.com/ChadG-202"><i class="fa fa-github fa-4x link-an"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100007105995409"><i class="fa fa-facebook fa-4x link-an"></i></a></li>
+                                <li><a href="mailto:chadgarratt4@gmail.com"><i class="fa fa-google fa-4x link-an"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/chadgarratt"><i class="fa fa-linkedin fa-4x link-an"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec" id="s2">
+                        <h1>About</h1>
+                        <P>This website has been designed and created by Chad Garratt. 
+                            It is a place to post projects, and display my progress as a programmer.
+                        </P>
+                    </div>
+                    <div class="sec" id="s3">
+                        <h1>Explore</h1>
+                        <div class="link2_wrapper">
+                            <ul>
+                                <li><a href="#myskills">My skills</a></li>
+                                <li><a href="#mywork">My work</a></li>
+                                <li><a href="#hireme">Hire me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="copyright"></div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
