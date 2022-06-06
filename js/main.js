@@ -26,18 +26,6 @@ function closeNav(){
     $('#check').prop("checked", false);
 }
 
-//cv
-document.getElementById("cv").onmouseover = function() {mouseOver()};
-document.getElementById("cv").onmouseout = function() {mouseOut()};
-
-function mouseOver() {
-    document.getElementById("arrow-wrapper").style.opacity = "1";
-}
-  
-function mouseOut() {
-    document.getElementById("arrow-wrapper").style.opacity = "0";
-}
-
 //video examples
 $( "#look1" ).click(function() {
     document.getElementById("vw1").style.display = "block";

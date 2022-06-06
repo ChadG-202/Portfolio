@@ -898,7 +898,7 @@ footer .top .sec#s3 a {
 }
 
 footer .top .sec#s3 a:hover {
-  color: #f8f8f8;
+  font-weight: bold;
 }
 
 footer #copyright {
