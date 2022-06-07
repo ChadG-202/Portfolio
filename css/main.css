@@ -1171,6 +1171,7 @@ footer #copyright {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+    height: 280px;
   }
   .skills .skills-wrapper .circle3 {
     -ms-grid-column: 1;
