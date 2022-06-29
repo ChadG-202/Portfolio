@@ -29,28 +29,23 @@ function closeNav(){
 //video examples
 $( "#look1" ).click(function() {
     document.getElementById("vw1").style.display = "block";
+    document.getElementById("vid1").play();
     document.getElementById("vw2").style.display = "none";
-    document.getElementById("vw3").style.display = "none";
 });
+
 $( "#look2" ).click(function() {
     document.getElementById("vw2").style.display = "block";
     document.getElementById("vw1").style.display = "none";
-    document.getElementById("vw3").style.display = "none";
-});
-$( "#look3" ).click(function() {
-    document.getElementById("vw3").style.display = "block";
-    document.getElementById("vw1").style.display = "none";
-    document.getElementById("vw2").style.display = "none";
+    document.getElementById("vid1").pause();
 });
 
 $( "#x1" ).click(function() {
     document.getElementById("vw1").style.display = "none";
+    document.getElementById("vid1").pause();
 });
+
 $( "#x2" ).click(function() {
     document.getElementById("vw2").style.display = "none";
-});
-$( "#x3" ).click(function() {
-    document.getElementById("vw3").style.display = "none";
 });
 
 //Load in
@@ -63,39 +58,39 @@ tl.from('.content', {
     opacity: 0,
     duration: 2,
     ease: Power4.easeOut
-})
+});
 tl.from('.stagger1', {
     opacity: 0,
     y: -50,
-    stagger: .3,
+    stagger: 0.3,
     ease: Power4.easeOut,
     duration: 1.3
-}, "-=1.5")
+}, "-=1.5");
 
 gsap.from(".line-anim", {
-    stagger: .2,
+    stagger: 0.2,
     delay: 0.5,
     scale: 0,
     duration: 1,
     ease: Back.easeOut.config(1.3)
-})
+});
 
 gsap.from(".media-anim", {
     opacity: 0,
     delay: 2.5,
     x: 7,
-    stagger: .2,
+    stagger: 0.2,
     ease: Power4.easeOut,
     duration: 1
-})
+});
 
 gsap.from(".ball-anim", {
     opacity: 0,
     scale: 0.5,
-    stagger: .2,
+    stagger: 0.2,
     ease: Power4.easeOut,
     duration: 1.3
-})
+});
 
 //Info
 gsap.from(".transition1", {
@@ -106,8 +101,8 @@ gsap.from(".transition1", {
     y: 50,
     opacity: 0,
     duration: 1.2,
-    stagger: .3
-})
+    stagger: 0.3
+});
 
 //Portfolio
 gsap.from(".transition2", {
@@ -150,8 +145,8 @@ gsap.from(".skill-an", {
     y: 20,
     opacity: 0,
     duration: 0.8,
-    stagger: .2
-})
+    stagger: 0.2
+});
 
 //Form
 gsap.from(".form-an", {
@@ -159,11 +154,11 @@ gsap.from(".form-an", {
         trigger: '.form-an',
         start: "top bottom"
     },
-    delay: .5,
+    delay: 0.25,
     x: -30,
     opacity: 0,
-    duration: .5
-})
+    duration: 0.5
+});
 
 //Footer links
 gsap.from(".link-an", {
@@ -173,7 +168,7 @@ gsap.from(".link-an", {
     },
     y: 20,
     opacity: 0,
-    stagger: .2,
+    stagger: 0.2,
     ease: Power4.easeOut,
     duration: 1    
-})
+});
