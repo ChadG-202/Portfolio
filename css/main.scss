@@ -30,7 +30,8 @@ body {
     }
     
     img,
-    video {
+    video, 
+    iframe{
         width: 100%;
     }
 }
@@ -534,6 +535,7 @@ body {
             }
             
             a, button{
+                font-family: "Poppins", arial;
                 position: relative;
                 padding: 10px 30px;
                 border-radius: 25pc;
@@ -671,7 +673,7 @@ body {
 //Hire-------------------------------------------------------------------------
 .hire{
     grid-row: 5/6;
-    background-image: url("https://images.unsplash.com/photo-1484291470158-b8f8d608850d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    background-image: url('../images/water.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -830,14 +832,15 @@ footer {
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
-    background-color: $white;
+    background-color: rgb(225, 225, 225);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: $blue; 
-    border: 3px solid $white;
+    border: 3px solid rgb(225, 225, 225);
     border-radius: 10pc;
+
 }
 
 /* Handle on hover */
@@ -889,6 +892,13 @@ footer {
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+//4K Monitor---------------------------------------------------
+@media only screen and (min-width: 1850px) {
+    body{
+        margin: 0 10vw;
     }
 }
 
@@ -1203,6 +1213,11 @@ footer {
                 display: none;
             }
         }
+    }
+
+    //Scroll------------------------------------------------------------------------------
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
 
