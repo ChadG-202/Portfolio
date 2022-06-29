@@ -1,2 +1,2 @@
 # Portfolio
-A portfolio of my current work
+A portfolio website for my current work.
