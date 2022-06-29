@@ -136,13 +136,13 @@
                     <p>This is an interactive pygame environment where the Dijkstra's, A* and Best-First Search path-finding algorithms can be compared to determine how efficiently they solve mazes.</p>
                     <ul>
                         <li><button id="look1">Take a Look</button></li>
-                        <li><a href="https://github.com/ChadG-202/Pathfinding" target="_blank" class="go">Have a Go</a></li>
+                        <li><a href="https://github.com/ChadG-202/Pathfinding" target="_blank" class="go">View Code</a></li>
                     </ul>
                 </div>
                 <div class="video-window" id="vw1">
                     <div class="video-wrapper">
                         <svg id="x1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-                        <video controls src="video/pathfinding.mp4"></video>
+                        <video controls id="vid1" src="video/pathfinding.mp4"></video>
                     </div>
                 </div>
                 <div class="img-wrapper">
@@ -151,17 +151,17 @@
             </div>
             <div class="project transition3" id="p2">
                 <div class="text">
-                    <h1>Emotion Classification (CNN)</h1>
-                    <p>A comparison of deep learning architectures CNN, MLP and RNN to determine the best model for classifying negative, positive and neutral emotion in both image and audio data.</p>
+                    <h1>Emotion Classification</h1>
+                    <p>A gathering, training and predicting application for classifying human emotion. This deep learning application uses image and audio data to respond to questions in a corresponding way to the emotion used when asking the question.</p>
                     <ul>
                         <li><button id="look2">Take a Look</button></li>
-                        <li><a href="https://github.com/ChadG-202/Happy-Sad-Emotion-Classification-Through-Machine-Learning" target="_blank" class="go">Have a Go</a></li>
+                        <li><a href="https://github.com/ChadG-202/Emotion-Classification-using-audio-and-image-data" target="_blank" class="go">View Code</a></li>
                     </ul>
                 </div>
                 <div class="video-window" id="vw2">
                     <div class="video-wrapper">
                         <svg id="x2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-                        <video controls src="video/emotion_classification.mp4"></video>
+                        <iframe id="vid2" height="385" src="https://www.youtube.com/embed/CxVVKquSXe4"></iframe>
                     </div>
                 </div>
                 <div class="img-wrapper">
@@ -173,15 +173,9 @@
                     <h1>Student Marketplace</h1>
                     <p>This is a front and back-end marketplace designed for students to securely purchase and sell second-hand products using encrypted data. </p>
                     <ul>
-                        <li><button id="look3">Take a Look</button></li>
-                        <li><a href="https://cg731.brighton.domains/BrightonMarket/index.php" target="_blank" class="go">Have a Go</a></li>
+                        <li><a href="https://cg731.brighton.domains/BrightonMarket/index.php" target="_blank">Take a Look</a></li>
+                        <li><a href="https://github.com/ChadG-202/StudentMarketplace" target="_blank" class="go">View Code</a></li>
                     </ul>
-                </div>
-                <div class="video-window" id="vw3">
-                    <div class="video-wrapper">
-                        <svg id="x3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-                        <video controls src="video/brighton_marketplace.mp4"></video>
-                    </div>
                 </div>
                 <div class="img-wrapper">
                     <img loading="lazy" src="images/marketplace.png" alt="Marketplace">
@@ -195,9 +189,9 @@
         <div class="skills">
             <div class="skills-wrapper">
                 <svg class="circle3" height="300" width="200">
-                    <circle loading="lazy" class="skill-an" cx="150" cy="250" r="30" fill="#195070ad" />
-                    <circle loading="lazy" class="skill-an" cx="90" cy="150" r="80" fill="#5690605b" />
-                    <circle loading="lazy" class="skill-an" cx="140" cy="60" r="60" fill="#195070ad" />
+                    <circle class="skill-an" cx="150" cy="250" r="30" fill="#195070ad" />
+                    <circle class="skill-an" cx="90" cy="150" r="80" fill="#5690605b" />
+                    <circle class="skill-an" cx="140" cy="60" r="60" fill="#195070ad" />
                 </svg>
                 <div class="skill-text">
                     <h1>Education</h1>
@@ -223,10 +217,10 @@
                         <h1>Dive Into Work With Me</h1>
                         <h4><span>Questions?</span> Get in contact!</h4>
                     </div>
-                    <form autocomplete="off" action="index.php" method="post">
+                    <form autocomplete="off" action="HireFormSend.php" method="post">
                         <input type="text" autocomplete="off" placeholder="Full Name" maxlength="50" pattern="[a-zA-Z]+ [a-zA-Z]+$" 
                         title="Must have [Forename Surname]" required name="fullName">
-                        <input type="email" autocomplete="off" placeholder="E-mail" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                        <input type="email" autocomplete="off" placeholder="E-mail" maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" 
                         title="Must fit format [characters@characters.domain]" required name="email">
                         <textarea autocomplete="off" placeholder="Your Message" maxlength="500" required name="question"></textarea>
                         <input class="form-an" type="submit" value="Send">
@@ -249,7 +243,7 @@
                     <div class="sec" id="s2">
                         <h1>About</h1>
                         <P>This website has been designed and created by Chad Garratt. 
-                            It is a place to post projects, and display my progress as a programmer.
+                            It is a place to post my projects, and display my progress as a programmer.
                         </P>
                     </div>
                     <div class="sec" id="s3">

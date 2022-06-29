@@ -1,9 +1,9 @@
 <?php
 //connection details
-$servername = "brighton";
-$username = "cg731_wedding";
-$password = "ChadKezWedding"; 
-$db="cg731_portfolio";     
+$servername = "sql207.epizy.com";
+$username = "epiz_31913025";
+$password = "zqKPW4yRLbXcnE"; 
+$db="epiz_31913025_PortfolioSite";     
 
 //connection query
 $mysqli = new mysqli($servername, $username,$password,$db);
